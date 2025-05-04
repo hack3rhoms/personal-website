@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Özgeçmiş - Mohamad Albitar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light" style="padding-top: 70px;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./photo/logo.jpg" alt="WebTek Logo" height="40" class="me-2">
+        WebTek Proje
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cv.html">Özgeçmiş</a></li>
+          <li class="nav-item"><a class="nav-link" href="sehirim.html">Şehrim</a></li>
+          <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+          <li class="nav-item"><a class="nav-link" href="takimiz.html">Takımımız</a></li>
+          <li class="nav-item"><a class="nav-link" href="ilgi.html">İlgi Alanları</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-primary" href="login.php">Giriş Yap</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- İçerik -->
+  <main class="container py-5">
+    <div class="row">
+      <!-- Sol kısım: Kişisel bilgiler -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <img src="./photo/benim1.png" alt="Profil" class="img-fluid rounded-circle mb-3" style="width: 150px;">
+            <h4 class="card-title">Mohamad Albitar</h4>
+            <p class="text-muted">Bilgisayar Mühendisliği Öğrencisi</p>
+            <p><i class="bi bi-envelope"></i> mohamad.albitar@ogr.sakarya.edu.tr</p>
+            <p><i class="bi bi-geo-alt"></i> Sakarya, Türkiye</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sağ kısım: Özgeçmiş detayları -->
+      <div class="col-md-8">
+        <!-- Eğitim -->
+        <section class="mb-4">
+          <h5 class="mb-3"><i class="bi bi-mortarboard"></i> Eğitim</h5>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <strong>Sakarya Üniversitesi</strong> – Bilgisayar Mühendisliği<br>
+              <small>2021 - Devam ediyor</small>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Yetenekler -->
+        <section class="mb-4">
+          <h5 class="mb-3"><i class="bi bi-tools"></i> Yetenekler</h5>
+          <div class="row">
+            <div class="col-sm-6">
+              <ul>
+                <li>ASP.NET Core</li>
+                <li>Spring Boot</li>
+                <li>React Native</li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul>
+                <li>Java / C# / JavaScript</li>
+                <li>PostgreSQL / MongoDB</li>
+                <li>Problem çözme</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Diller -->
+        <section class="mb-4">
+          <h5 class="mb-3"><i class="bi bi-translate"></i> Diller</h5>
+          <ul class="list-group">
+            <li class="list-group-item">Arapça – Ana dil</li>
+            <li class="list-group-item">Türkçe – Çok iyi</li>
+            <li class="list-group-item">İngilizce – Orta</li>
+          </ul>
+        </section>
+
+        <!-- Deneyim (İsteğe bağlı eklenebilir) -->
+        <section>
+          <h5 class="mb-3"><i class="bi bi-briefcase"></i> Deneyim</h5>
+          <p>Henüz profesyonel iş deneyimi bulunmamaktadır. Üniversite projeleriyle aktif olarak geliştirme yapılmaktadır.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <div class="container">
+      <small>&copy; 2025 WebTek Proje. Tüm hakları saklıdır.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

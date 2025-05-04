@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Şehrim - Humus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .section-img {
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .btn-dark {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-dark:hover {
+            background-color: #343a40;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body class="bg-light" style="padding-top: 70px">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./photo/logo.jpg" alt="WebTek Logo" height="40" class="me-2" />
+                WebTek Proje
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sehirim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link" href="takimiz.html">Takımımız</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgi.html">İlgi Alanları</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="login.php">Giriş Yap</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider: Kartlar -->
+    <section class="bg-dark text-white py-5">
+        <div class="container">
+            <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card bg-black text-white text-center border-0">
+                                    <a href="#citadel">
+                                        <img src="./photo/hums_kale.png" class="card-img-top" alt="Humus Kalesi" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold fs-4">Humus Kalesi</h5>
+                                        <p class="card-text text-muted"><i class="bi bi-geo-alt-fill"></i> Suriye</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card bg-black text-white text-center border-0">
+                                    <a href="#mosque">
+                                        <img src="./photo/khalid_mosque.png" class="card-img-top"
+                                            alt="Halid Bin Velid Camii" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold fs-4">Halid Bin Velid Camii</h5>
+                                        <p class="card-text text-muted"><i class="bi bi-geo-alt-fill"></i> Suriye</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card bg-black text-white text-center border-0">
+                                    <a href="#orontes">
+                                        <img src="./photo/orontes.png" class="card-img-top" alt="Asi Nehri" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold fs-4">Asi Nehri</h5>
+                                        <p class="card-text text-muted"><i class="bi bi-geo-alt-fill"></i> Suriye</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card bg-black text-white text-center border-0">
+                                    <a href="#souq">
+                                        <img src="./photo/Homs_saati.png" class="card-img-top" alt="Saat Kulesi" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold fs-4">Saat Kulesi</h5>
+                                        <p class="card-text text-muted"><i class="bi bi-geo-alt-fill"></i> Suriye</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- İçerik Bölümü -->
+    <main class="container py-5">
+        <h2 class="text-center mb-5">Şehrim: <span class="text-primary">HOMS</span></h2>
+
+        <section class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h4 class="fw-bold">Nüfus ve Genel Bilgi</h4>
+                <p>Humus, Suriye'nin bir şehri olup, nüfus bakımından Şam ve Halep'ten sonra ülkenin üçüncü büyük
+                    şehridir. Ülkenin ortasında, Asi Nehri'nin doğu kıyısında yer alır ve başkent Şam'ın yaklaşık 162 km
+                    kuzeyinde, güney vilayetlerini ve şehirlerini kıyı, kuzey ve doğu vilayetleri ve şehirleriyle
+                    birbirine bağlar. Konumu itibariyle Suriye'nin en büyük ulaşım merkezi konumunda olup, bu konumu ona
+                    eşsiz bir ticari konum kazandırmış ve çok sayıda hayati, endüstriyel ve ticari tesisle
+                    zenginleştirmiştir. Ayrıca şehir, Humus Valiliği'nin idari merkezidir.</p>
+                <a href="#citadel" class="btn btn-dark btn-sm">Daha Fazla</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="./photo/Homs.jpg" class="img-fluid section-img" alt="Humus Genel Bilgi" />
+            </div>
+        </section>
+
+        <section id="citadel" class="row align-items-center mb-5 flex-md-row-reverse">
+            <div class="col-md-6">
+                <h4 class="fw-bold">Humus Kalesi</h4>
+                <p>Humus Kalesi, Suriye'nin Humus antik kentinin güneybatısında, şehirden 32 metre, deniz seviyesinden
+                    ise 533 metre yükseklikteki bir tepede yer almaktadır. Kalenin inşa tarihi M.Ö. 3. binyıla kadar
+                    uzanıyor.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="./photo/hums_kale.png" class="img-fluid section-img" alt="Humus Kalesi" />
+            </div>
+        </section>
+
+        <section id="mosque" class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h4 class="fw-bold">Halid Bin Velid Camii</h4>
+                <p>Halid bin Velid Camii, Suriye'nin Humus şehrinde bulunan bir camidir. Asi Nehri kıyısındaki Humus
+                    kentinin kuzeydoğusundaki Halidiye ilçesinde yer almaktadır. Osmanlı mühendisi Sinan tarafından inşa
+                    edilmiştir. Kimileri Halid bin Velid'in camide medfun olduğunu iddia ederken, kimileri de kabrinin
+                    sahibinin Halid bin Yezid bin Muaviye olduğunu ileri sürmektedir.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="./photo/khalid_mosque.png" class="img-fluid section-img" alt="Halid Bin Velid Camii" />
+            </div>
+        </section>
+
+        <section id="souq" class="row align-items-center mb-5 flex-md-row-reverse">
+            <div class="col-md-6">
+                <h4 class="fw-bold">Homs Saati</h4>
+                <p>Halk arasında “Karjiya Saati” olarak bilinen Humus Yeni Saat Kulesi, tepesinde büyük bir mekanik
+                    saatin bulunduğu, farklı yönlere bakan dört bölüme ayrılmış kule benzeri bir yapıdır.
+                    Humus'un meşhur simgelerinden biri ve şehrin sembolüdür. 1960'lı yıllarda inşa edilmiştir.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="./photo/Homs_saati.png" class="img-fluid section-img" alt="Eski Çarşı" />
+            </div>
+        </section>
+
+        <section id="orontes" class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h4 class="fw-bold">Asi Nehri</h4>
+                <p>Şehrin içinden geçen bu nehir, Humus'un doğal güzelliklerinden biridir.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="./photo/orontes.png" class="img-fluid section-img" alt="Asi Nehri" />
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <div class="container">
+            <small>&copy; 2025 WebTek Proje. Tüm hakları saklıdır.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

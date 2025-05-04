@@ -1,0 +1,25 @@
+.hero-img {
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -40%);
+    height: 120%;
+    object-fit: cover;
+}
+
+.card-img-top {
+    height: 525px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+
+.bg-dark {
+    background: linear-gradient(145deg, #111, #222);
+}
+  

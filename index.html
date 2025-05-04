@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebTek Proje - Ana Sayfa</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Özel CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light" style="padding-top: 70px;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./photo/logo.jpg" alt="WebTek Logo" height="40" class="me-2">
+        WebTek Proje
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Anasayfa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Hakkımda</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+          <li class="nav-item"><a class="nav-link" href="sehirim.html">Şehrim</a></li>
+          <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+          <li class="nav-item"><a class="nav-link" href="takimiz.html">Takımımız</a></li>
+          <li class="nav-item"><a class="nav-link" href="ilgi.html">İlgi Alanları</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-primary" href="login.php">Giriş Yap</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Bölümü -->
+  <header class="position-relative bg-dark text-white vh-100 d-flex align-items-center">
+    <div class="container-fluid h-100">
+      <div class="row g-0 h-100">
+        <div class="col-md-6 position-relative overflow-hidden">
+          <img src="./photo/benim1.png" alt="Profil Fotoğrafı" class="hero-img position-absolute">
+        </div>
+        <div class="col-md-6 d-flex flex-column justify-content-center px-5">
+          <h6 class="text-primary mb-2 fw-semibold">Mohamad Albitar</h6>
+          <h1 class="display-4 fw-light mb-3">
+            I’m a <span class="fw-bold text-primary">Software Engineer</span>
+          </h1>
+          <p class="lead mb-4">
+            Merhaba, Sakarya Üniversitesi Bilgisayar Mühendisliği öğrencisiyim ve web uygulamaları geliştirmeye
+            tutkuluyum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <svg class="w-100 position-absolute bottom-0 start-0" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon fill="#ffffff" points="0,10 100,0 100,10" />
+    </svg>
+  </header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="container py-5">
+    <!-- About Me Bölümü -->
+    <section id="about" class="row align-items-center py-5">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="./photo/about-placeholder.png" alt="Hakkımda Fotoğrafı" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2>Hakkımda <span class="text-primary">Ben</span></h2>
+        <h3 class="mb-3 fw-light">Merhaba! Ben Mohamad Albitar.</h3>
+        <p class="text-muted lh-lg">
+          Bilgisayar mühendisliği öğrencisi olarak, ASP.NET Core, Spring Boot ve React Native ile modern web
+          uygulamaları geliştirdim. MongoDB ve PostgreSQL tabanlı projelerde veri tabanı tasarımı ve optimizasyon
+          üzerine çalıştım. C#, Java ve JavaScript dillerine hakimim ve problem çözme odaklı geliştirme yapıyorum.
+        </p>
+        <div class="mt-4">
+          <a href="#" class="btn btn-outline-primary btn-sm rounded-circle me-2"><i class="bi bi-globe"></i></a>
+          <a href="#" class="btn btn-outline-primary btn-sm rounded-circle me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="btn btn-outline-primary btn-sm rounded-circle me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="btn btn-outline-primary btn-sm rounded-circle"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <div class="container">
+      <small>&copy; 2025 WebTek Proje. Tüm hakları saklıdır.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
