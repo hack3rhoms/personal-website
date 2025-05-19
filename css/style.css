@@ -1,3 +1,4 @@
+/* --- التنسيقات الموجودة مسبقاً --- */
 .hero-img {
     top: 20%;
     left: 60%;
@@ -32,4 +33,58 @@
 .fade-section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* --- تنسيقات مضافة لصفحة Takımımız --- */
+body {
+    scroll-behavior: smooth;
+    background-color: #f8f9fa;
+}
+
+.highlight {
+    background-color: #ffc107;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+.gallery img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* === Sehirim Sayfası CSS === */
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.section-img {
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn-dark {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.rounded-4 {
+  border-radius: 1.5rem !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
 }

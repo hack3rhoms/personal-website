@@ -1,4 +1,4 @@
-<!-- my cv page-->
+<!-- my cv page -->
 <!DOCTYPE html>
 <html lang="tr">
 
@@ -8,7 +8,13 @@
   <title>Özgeçmiş - Mohamad Albitar</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+    }
+  </style>
 </head>
 
 <body class="bg-light" style="padding-top: 70px;">
@@ -28,7 +34,6 @@
           <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
           <li class="nav-item"><a class="nav-link active" href="cv.html">Özgeçmiş</a></li>
           <li class="nav-item"><a class="nav-link" href="sehirim.html">Şehrim</a></li>
-          <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
           <li class="nav-item"><a class="nav-link" href="takimiz.html">Takımımız</a></li>
           <li class="nav-item"><a class="nav-link" href="ilgi.html">İlgi Alanları</a></li>
           <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
@@ -45,13 +50,13 @@
     <div class="row">
       <!-- Sol kısım: Kişisel bilgiler -->
       <div class="col-md-4 mb-4">
-        <div class="card shadow-sm">
+        <div class="card shadow-lg border-0">
           <div class="card-body text-center">
-            <img src="./photo/benim1.png" alt="Profil" class="img-fluid rounded-circle mb-3" style="width: 150px;">
+            <img src="./photo/benim1.png" alt="Profil" class="rounded-circle mb-3 shadow" width="150" height="150">
             <h4 class="card-title">Mohamad Albitar</h4>
             <p class="text-muted">Bilgisayar Mühendisliği Öğrencisi</p>
-            <p><i class="bi bi-envelope"></i> mohamad.albitar@ogr.sakarya.edu.tr</p>
-            <p><i class="bi bi-geo-alt"></i> Sakarya, Türkiye</p>
+            <p class="mb-1"><i class="bi bi-envelope-fill me-2 text-primary"></i><a href="mailto:mohamad.albitar@ogr.sakarya.edu.tr" class="text-decoration-none">mohamad.albitar@ogr.sakarya.edu.tr</a></p>
+            <p><i class="bi bi-geo-alt-fill me-2 text-danger"></i>Sakarya, Türkiye</p>
           </div>
         </div>
       </div>
@@ -60,11 +65,11 @@
       <div class="col-md-8">
         <!-- Eğitim -->
         <section class="mb-4">
-          <h5 class="mb-3"><i class="bi bi-mortarboard"></i> Eğitim</h5>
-          <ul class="list-group">
+          <h5 class="mb-3"><i class="bi bi-mortarboard-fill"></i> Eğitim</h5>
+          <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <strong>Sakarya Üniversitesi</strong> – Bilgisayar Mühendisliği<br>
-              <small>2021 - Devam ediyor</small>
+              <small class="text-muted">2021 - Devam ediyor</small>
             </li>
           </ul>
         </section>
@@ -73,19 +78,18 @@
         <section class="mb-4">
           <h5 class="mb-3"><i class="bi bi-tools"></i> Yetenekler</h5>
           <div class="row">
-            <div class="col-sm-6">
-              <ul>
-                <li>ASP.NET Core</li>
-                <li>Spring Boot</li>
-                <li>React Native</li>
-              </ul>
+            <div class="col-md-6">
+              <span class="badge bg-secondary me-1 mb-1">ASP.NET Core</span>
+              <span class="badge bg-secondary me-1 mb-1">Spring Boot</span>
+              <span class="badge bg-secondary me-1 mb-1">React Native</span>
             </div>
-            <div class="col-sm-6">
-              <ul>
-                <li>Java / C# / JavaScript</li>
-                <li>PostgreSQL / MongoDB</li>
-                <li>Problem çözme</li>
-              </ul>
+            <div class="col-md-6">
+              <span class="badge bg-secondary me-1 mb-1">Java</span>
+              <span class="badge bg-secondary me-1 mb-1">C#</span>
+              <span class="badge bg-secondary me-1 mb-1">JavaScript</span>
+              <span class="badge bg-secondary me-1 mb-1">PostgreSQL</span>
+              <span class="badge bg-secondary me-1 mb-1">MongoDB</span>
+              <span class="badge bg-secondary me-1 mb-1">Problem çözme</span>
             </div>
           </div>
         </section>
@@ -93,29 +97,28 @@
         <!-- Diller -->
         <section class="mb-4">
           <h5 class="mb-3"><i class="bi bi-translate"></i> Diller</h5>
-          <ul class="list-group">
-            <li class="list-group-item">Arapça – Ana dil</li>
-            <li class="list-group-item">Türkçe – Çok iyi</li>
-            <li class="list-group-item">İngilizce – Orta</li>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Arapça <span class="badge bg-success">Ana Dil</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Türkçe <span class="badge bg-info text-dark">Çok İyi</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              İngilizce <span class="badge bg-warning text-dark">Orta</span>
+            </li>
           </ul>
         </section>
 
-        <!-- Deneyim (İsteğe bağlı eklenebilir) -->
+        <!-- Deneyim -->
         <section>
-          <h5 class="mb-3"><i class="bi bi-briefcase"></i> Deneyim</h5>
-          <p>Henüz profesyonel iş deneyimi bulunmamaktadır. Üniversite projeleriyle aktif olarak geliştirme
-            yapılmaktadır.</p>
+          <h5 class="mb-3"><i class="bi bi-briefcase-fill"></i> Deneyim</h5>
+          <p class="text-muted">Henüz profesyonel iş deneyimi bulunmamaktadır. Üniversite projeleriyle aktif olarak yazılım geliştirme yapılmaktadır.</p>
         </section>
       </div>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-light text-center py-4">
-    <div class="container">
-      <small>&copy; 2025 WebTek Proje. Tüm hakları saklıdır.</small>
-    </div>
-  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
